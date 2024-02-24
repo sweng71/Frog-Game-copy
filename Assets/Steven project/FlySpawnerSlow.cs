@@ -25,11 +25,10 @@ public class FlySpawnerSlow : MonoBehaviour
     {
         while (true) 
         {
-            yield return new WaitForSeconds(Random.Range(5, 10));
+            yield return new WaitForSeconds(Random.Range(2, 4));
 
             randomIndex = Random.Range(0, flyReference.Length);
             randomSide = Random.Range(0,2);
-             
 
             spawnedFly = Instantiate(flyReference[randomIndex]);
 
